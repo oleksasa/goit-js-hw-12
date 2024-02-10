@@ -1,17 +1,11 @@
 import SimpleLightbox from 'simplelightbox';
-
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { fetchImagesParams } from './js/api/fetchImages';
-
 import { toastError, toastSuccess, toastWarning } from './js/components/toast';
-
 import createGallery from './js/components/gallery';
-
 import selector from './js/components/selector';
-
 import { fetchImages } from './js/api/fetchImages';
-
 import { GALLERY_LINK } from './js/constants/classes';
 
 let total;
