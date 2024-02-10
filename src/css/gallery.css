@@ -1,0 +1,228 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2e2f42;
+  padding: 20px;
+  background: #2F4F4F;
+}
+
+body::before {
+  content: '';
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../img/flower-3.png'), url('../img/flower-16.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-size: 15%, 15%;
+  background-position: right top, left top;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?gbz7oa');
+  src: url('../fonts/icomoon.eot?gbz7oa#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg?gbz7oa#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid blue;
+  border-right: 10px solid green;
+  border-bottom: 10px solid red;
+  border-left: 10px solid pink;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.loader-scroll{
+  border: 6px solid  pink;
+  border-radius: 50%;
+  border-left: 6px solid #DA70D6;
+  border-top: 6px solid #DA70D6;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  display: none;
+  margin: 20px auto 0;
+}
+
+.icon-close-messege:before {
+  content: '\e900';
+  color: #fff;
+}
+.icon-bi_x-octagon:before {
+  content: '\e904';
+  color: #fafafb;
+}
+.icon-chek:before {
+  content: '\e903';
+  color: #fff;
+}
+.icon-warning:before {
+  content: '\e901';
+  color: #fff;
+}
+.icon-close:before {
+  content: '\e902';
+  color: #fafafb;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.search-form {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.image-query {
+  font-size: 16px;
+  color: honeydew;
+  margin-top: 8px;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #F08080;
+  border-radius: 4px;
+  padding: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0.0, 0.1);
+}
+
+.image-query:hover {
+  border-color: #DC143C;
+}
+
+
+button {
+  color: #2F4F4F;
+  width: 91px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  background-color: #9ACD32;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 8px;
+  font-size: medium;
+  transition: 300ms;
+}
+
+button:hover {
+  background-color: #90EE90;
+  transform: scale(1.05);
+}
+
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  padding: 0;
+  width: 1128px;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0;
+}
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery-link {
+  display: block;
+  position: relative;
+  border: 1px solid #808080;
+}
+
+.gallery__figcaption {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 4px 0;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #F5F5DC;
+  height: 48px;
+  width: 100%;
+}
+
+.image-item {
+  color: #2F4F4F;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery-card {
+}
+
+.image-elem {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+}
